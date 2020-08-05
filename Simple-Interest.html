@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="simple-interest.css">
+    <script src="simple-interest.js"></script>
+    <title>simple interst ui</title>
+</head>
+<body>
+    <div class="container">
+
+          <h2 align="center">I-NERD</h2>
+
+            <div class="flexbox">
+                  <div class="item flex1">
+                      <h2>Program Details</h2>
+                      This program is a business based program
+                      which returns the interest on an amount after certain period
+                      of time.
+                      <div style="background-color: orange;color:blue;padding-top: 7px;">
+                        PLEASE FILL THE THE AMOUNT,RATE AND TIME INPUT BOXES TO GET
+                        REQUIRED OUTPUT </div>
+                        
+                        <div style="background-color:red;color:rgb(243, 247, 12);padding-top: 20px;">
+                            error: An error  "NaN" <br>
+                            will occur whenever you leave a input blank, to avoid this error 
+                            please fill up the all rectangular bxes
+                        </div>
+                      
+                  </div>
+
+                  <div class="item flex2">
+                      <h2 style="background-color: orange;color:blue;">FILL THE RECTANGULAR BOXES BELOW</h2>
+                   
+                      <form > 
+                          <label>Amount</label> <input type="text" id="amount" required /><br>
+                         <label>Rate(%)</label><input type="text" id="rate" required/><br>
+                         <label>Time(yrs)</label> <input type="number" id="time" required /><br>
+                          <input type="reset" id="reset"/>
+                          
+                        </form>
+                    <button onclick="result()">result</button>
+                </div>
+
+                <div class="item flex3">
+                    <h2>result</h2><br>
+
+                    <h2>interest</h2>
+                    <div id="interest"></div>
+                    <h2>total</h2><br>
+
+                    <div id="total"></div>
+                </div>
+            </div>
+        
+    </div>
+
+      <footer><h3>I-Nerd</h3</footer>
+</body>
+</html>
